@@ -1,0 +1,158 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(white 0%, orange 90%);
+    height: 100vh;
+    color: #333;
+    line-height: 1.6;
+  }
+
+  header {
+    height: 70px;
+    margin-top: -30px;
+    background-color: rgb(255, 166, 0, 0.822);
+    position: fixed;
+    z-index: 100;
+    left: 30px;
+    right: 30px;
+    display: flex;
+    justify-content: right;
+    border-radius: 30px;
+    align-items: center;
+  }
+
+  .header-container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+  }
+  
+  .nav-right a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s;
+    position: relative;
+    margin-left: 100px;
+    transform: scale(1.2);
+  }
+  
+  .nav-right a:hover {
+    color: grey;
+  }
+  
+  header h1 {
+    margin: 0;
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+  .logo-left img {
+    height: 80px;
+    width: 100px;
+    display: block;
+  }
+
+  
+  /* Booking Section */
+  .booking-section {
+    width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .booking-section h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(51, 51, 51);
+    font-size: 1.8rem;
+  }
+  
+  .booking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .booking-form label {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .booking-form input,
+  .booking-form select,
+  .booking-form button {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .booking-form input:focus,
+  .booking-form select:focus {
+    border-color: #ffa600;
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 166, 0, 0.5);
+  }
+  
+  .booking-form button {
+    background-color: #ffa600;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .booking-form button:hover {
+    background-color: #ff8c00;
+  }
+  
+  /* Travel Tips Section 
+  .travel-tips {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .travel-tips h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .travel-tips ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .travel-tips ul li {
+    background: #ffa600;
+    color: #fff;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .travel-tips ul li i {
+    margin-right: 10px;
+    color: #fff;
+  }
+  

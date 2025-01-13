@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking Page</title>
+  <link rel="stylesheet" href="book.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo-left">
+        <img src="/Tourist-site/logo.png" alt="Logo">
+      </div>
+      <nav class="nav-right">
+        <a href="index.html#Home">Home</a>
+        <a href="index.html#About">About</a>
+        <a href="index.html#Services">Services</a>
+        <a href="index.html#Contacts">Contacts</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="booking-section">
+      <h1>Book Your Adventure</h1>
+      <form class="booking-form">
+        <label for="destination">Choose a Destination:</label>
+        <select id="destination" name="destination" required>
+          <option value="">Choose a destination</option>
+          <option value="River Hotel">River Hotel</option>
+          <option value="Amboseli National Park">Amboseli National Park</option>
+          <option value="Shompole Conservancy">Shompole Conservancy</option>
+          <option value="Lake Magadi">Lake Magadi</option>
+          <option value="Ol Donyio Orok">Ol Donyio Orok</option>
+          <option value="Maasai Ostrich Resort">Maasai Ostrich Resort</option>
+          <option value="Ngong Hills">Ngong Hills</option>
+          <option value="Nkasiri Adventure Park">Nkasiri Adventure Park</option>
+          <option value="Lerruat Log Resort">Lerruat Log Resort</option>
+          <option value="Nyiri Desert">Nyiri Desert</option>
+          <option value="Mount Suswa">Mount Suswa</option>
+          <option value="Mzima Springs">Mzima Springs</option>
+          <option value="Ewaso Ngiro">Ewaso Ngiro</option>
+          <option value="Bissil Maasai Cultural Visit">Bissil Maasai Cultural Visit</option>
+          <option value="Chef Pierra Cooking Classes">Chef Pierra Cooking Classes</option>
+          <option value="Sironka Valley Resort">Sironka Valley Resort</option>
+          <option value="Maasai Mara">Maasai Mara</option>
+        </select>
+
+        <label for="package">Choose a Package:</label>
+        <select id="package" name="package" required>
+          <option value="budget">Budget</option>
+          <option value="standard">Standard</option>
+          <option value="luxury">Luxury</option>
+        </select>
+
+        <label for="name">Your Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="email">Your Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="travel-date">Travel Date:</label>
+        <input type="date" id="travel-date" name="travel_date" required>
+
+        <label for="number-of-people">Number of People:</label>
+        <input type="number" id="number-of-people" name="number_of_people" min="1" required>
+
+        <button type="submit" class="book-btn">Submit Booking</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
