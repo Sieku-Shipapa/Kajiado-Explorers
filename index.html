@@ -12,20 +12,19 @@
     <header>
       <div class="header-container">
         <div class="logo-left">
-          <img src="/Tourist-site/logo.png" alt="logo">
+          <img src="pictures/logo2.jpg" alt="logo">
         </div>
       <div class="nav-right">
         <nav>
-        <div class="dropdown">
-        <a href="#Home"><i class="fa-solid fa-house"></i></a>
-        <div class="dropdown-content">
-          <a href="#Home">Home 1</a>
-          <a href="#Home2">Home 2</a>
-        </div>
-        </div>
+        <a href="#Home" class="tooltip"><i class="fa-solid fa-house"></i>
+          <span class="tooltip-text">Home</span>
+        </a>
+        <a href="#Destinations" class="tooltip"><i class="fa-solid fa-location-dot"></i>
+          <span class="tooltip-text">Destinations</span>
+        </a>
         <a href="#About" class="tooltip"><i class="fa-solid fa-circle-info" ></i>
         <span class="tooltip-text">About</span> 
-      </a>
+       </a>
         <a href="#Services" class="tooltip"><i class="fa-solid fa-s" tooltip="Services"></i>
           <span class="tooltip-text">Services</span>
          </a>
@@ -68,7 +67,8 @@
       </div>
     </section>
 
-    <section id="Home2">
+    <section id="Destinations">
+      <h1>Destinations</h1>
       <div class="wrapper">
         <i id="left" class="fa-solid fa-angle-left"></i>
         <ul class="carousel">
@@ -230,12 +230,10 @@
 
     <section id="About">
       <div class="about-container">
+        <h1>About Us</h1>
         <div class="about-content">
-          <h1>About Us</h1>
           <p>
             At <span class="name">Kajiado Explorers</span>, we are dedicated to showcasing the beauty and culture of Kajiado County. Whether you're an adventure seeker, a nature enthusiast, or a cultural explorer, we provide unforgettable experiences that cater to every traveler.
-          </p>
-          <p>
             Our mission is to connect you with the breathtaking landscapes, rich traditions, and hidden gems of Kajiado. From serene lakes to majestic mountains, let us guide you on an adventure you'll cherish forever.
           </p>
           <div class="about-highlights">
@@ -249,12 +247,17 @@
                 <i class="fa-solid fa-users"></i>
                 <p>Experienced Guides</p>
               </div>
+              <div class="highlight">
+                <i class="fa-solid fa-list"></i>
+                <p>Personalized itineraries</p>
+              </div>
+              <div class="highlight">
+                <i class="fa-solid fa-headphones"></i>
+                <p>Trusted operators</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="about-image">
-          <img src="maasai.jpg" alt="Scenic view of Kajiado" class="img">
-        </div>
+       </div>
       </div>
     </section>
 
