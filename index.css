@@ -45,7 +45,7 @@ nav {
   position: relative;
 }
 
-.nav-right a:hover {
+.nav-right :hover {
   color: grey;
 }
 
@@ -55,6 +55,10 @@ nav {
   transform: scale(1.2);
   
 }
+.logo-left{
+  display: flex;
+  align-items: center;
+}
 
 .logo-left img {
   height: 60px;
@@ -63,6 +67,33 @@ nav {
   margin-left: 30px;
   border-radius: 5px;
 }
+/*.logo-left a{
+  color: #fff; 
+  font-size: 30px; 
+  text-decoration: none;
+  margin-left: 20px;
+  cursor: pointer;
+  transition: color 0.3s;
+  position: relative;
+  display: flex;
+}
+  */
+
+.logo-left i:hover {
+  color: gray; 
+}
+.logo-left i{
+  color: rgb(255, 255, 255); 
+  font-size: 30px; 
+  text-decoration: none;
+  margin-left: 20px;
+  cursor: pointer;
+  transition: color 0.3s;
+  position: relative;
+  display: flex;
+ 
+}
+
 
 .tooltip .tooltip-text{
   font-size: 20px;
@@ -303,7 +334,7 @@ h1 {
 .wrapper .carousel{
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: calc((100% / 3));
+  grid-auto-columns:calc(32.5%);
   gap: 16px;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
@@ -358,7 +389,7 @@ h1 {
   margin: 30px 0 5px;
 }
 
-.card a{
+/*.card a{
   background: rgba(255, 166, 0, 0.822);
   padding: 20px;
   border-radius: 8px;
@@ -370,17 +401,25 @@ h1 {
   flex-grow: 1;
   text-decoration: none;
 
-}
+}*/
 .card a:hover{
   background: orange;
 }
 .card a:active{
   background: transparent;
 }
-@media screen and (max-width:980px){
-  .wrapper.carousel{
-    grid-auto-columns: calc((100% / 2));
-  }
+.button {
+  background: rgba(255, 166, 0, 0.822);
+  padding: 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.15s;
+  color: rgb(106, 109, 120);
+  display: inline-block;
+  text-decoration: none;
+  margin-top: 30px;
+  
 }
 
 /* About Section Styling */
@@ -634,7 +673,7 @@ h1 {
 }
 
 @media screen and (max-width: 980px) {
-  #Home2{
+  #Destinations{
     height: 60vh;
     
   }
@@ -665,6 +704,13 @@ h1 {
     grid-template-columns: repeat(2, 1fr); /* Only 2 columns */
   }
 }
+@media screen and (max-width: 980px) {
+  .wrapper.carousel {
+    grid-auto-columns: calc(50%);
+  }
+  
+}
+
 
 
 

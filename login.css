@@ -1,0 +1,87 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(white 0%, orange 90%);
+    color: rgb(51, 51, 51);
+  }
+  
+  header {
+    background-color: rgb(255, 166, 0);
+    padding: 10px 20px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .form-container {
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+  }
+  
+  .form-toggle {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .form-toggle button {
+    background: none;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffa600;
+    cursor: pointer;
+  }
+  
+  .form-toggle button.active {
+    color: #ff8c00;
+    text-decoration: underline;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .form.hidden {
+    display: none;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button[type="submit"] {
+    background-color: #ffa600;
+    color: #fff;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #ff8c00;
+  }
+  
+  
